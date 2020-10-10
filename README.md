@@ -12,9 +12,9 @@
 
 # Preview
 
-<p>
-  <img src="static/search-page.jpg" alt="search page">
-</p>
+<kbd>
+  <img src="static/search-page.jpg"  alt="search page">
+</kbd>
 
 ## Goals
 
