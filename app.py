@@ -8,6 +8,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', randn = str(random.randint(4001,5000)))
 
+@app.route('/about') 
+def about():
+    return render_template('about.html', randn = str(random.randint(4001,5000)))
+
+@app.route('/howitworks') 
+def howitworks():
+    return render_template('howitworks.html', randn = str(random.randint(4001,5000)))
+
 @app.route('/search_tvshow', methods=['GET','POST'])
 def search_tvshow():
     search_term = ''
@@ -21,7 +29,6 @@ def search_tvshow():
     tvshow =[]
     if(not response):
         return render_template('movies.html', randn = str(random.randint(101,4000)))
-    jprint(response)
     for i in range(4):
         img = response[i]["show"]["image"]["original"]
         if(img == None):

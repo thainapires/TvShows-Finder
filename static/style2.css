@@ -29,3 +29,25 @@
     padding:20px;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.icon-search{
+    color:#ffff;
+}
+
+.search-bar{
+    border-width: 2px;
+    border-color: #6147ff !important;
+}
+
+.search-bar:focus {
+    box-shadow: none;
+}
+
+.search-bar-icon{
+    border-width: 2px;
+    border-color: #6147ff !important;
+    background-color: #6147ff !important;
+}
+
+

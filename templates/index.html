@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')+'?q='+randn }}">
+    <title>TV Shows Finder</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="box">
+        <h2><strong>Search a TV Show that you like!</strong></h2>
+        <h6>The only thing you need to do is to search the name in search bar below :)</h4>
+            <form action="{{ url_for('search_tvshow') }}" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" name="search_term"  class="form-control search-bar" placeholder="Search" aria-label="Recipient's username">
+                    <div class="input-group-append"></div>
+                    <button type="submit" class="input-group-text search-bar-icon"><i class="fa fa-search icon-search"></i></button>
+                    <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                </div>
+            </form>
+        <img style="width:20rem; margin-bottom: 2rem;"src="../static/watching-tv.png">
+        <h6>Made by <a href="https://github.com/thainapires">Thainá Pires.</a></h6>    
+    </div>
+</div>
+
+
+{% endblock %}
+
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,11 +67,10 @@
                         <input type="text" name="search_term"  class="form-control search-bar" placeholder="Search" aria-label="Recipient's username">
                         <div class="input-group-append"></div>
                         <button type="submit" class="input-group-text search-bar-icon"><i class="fa fa-search icon-search"></i></button>
-                        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
                     </div>
                 </form>
             <img style="width:20rem; margin-bottom: 2rem;"src="../static/watching-tv.png">
         </div>
     </div>
 </body>
-</html>
+</html>-->

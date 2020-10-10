@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')+'?q='+randn }}">
+<title>TV Shows Finder</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="box">
+        <h2><strong>TV Shows Finder is built with:</strong></h2>
+        <h4>Flask Framework, HTML, CSS & <a href="http://www.tvmaze.com/api">TVMaze API.</a></h4>
+        <h6>Made by <a href="https://github.com/thainapires">Thainá.</a></h6>    
+        <img style="width:20rem; margin-bottom: 2rem;"src="../static/watching-tv.png">
+    </div>
+</div>
+
+{% endblock %}
