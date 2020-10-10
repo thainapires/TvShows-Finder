@@ -31,11 +31,14 @@
         <div class="box">
             <h2><strong>Search a TV Show that you like!</strong></h2>
             <h6>The only thing you need to do is to search the name in search bar below :)</h4>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control search-bar" placeholder="Search" aria-label="Recipient's username">
-                    <div class="input-group-append"></div>
-                    <span class="input-group-text search-bar-icon"><a href= '/requ'><i class="fa fa-search icon-search"></i></a></span>
-                </div>
+                <form action="{{ url_for('search_tvshow') }}" method="post">
+                    <div class="input-group mb-3">
+                        <input type="text" name="search_term"  class="form-control search-bar" placeholder="Search" aria-label="Recipient's username">
+                        <div class="input-group-append"></div>
+                        <button type="submit" class="input-group-text search-bar-icon"><i class="fa fa-search icon-search"></i></button>
+                        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                    </div>
+                </form>
             <img style="width:20rem; margin-bottom: 2rem;"src="../static/watching-tv.png">
         </div>
     </div>

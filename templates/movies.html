@@ -28,15 +28,16 @@
             </ul>
         </div>
       </nav>
-    <div class="album py-5 bg-light">
-        <div class="container">
+    <div class='container'>
+    <div class="album py-5 bg-white">
           <div class="row">
+            {% if tvshows|length > 0 %}
             {% for tvshow in tvshows %}
             <div class="col-md-6 c-custom">
                 <div class="card" style="max-width: 500px;">
                 <div class="row no-gutters">
                     <div class="col-sm-5" style="background: #868e96;">
-                        <img src="{{tvshow[0]}}" class="card-img-top h-100" alt="...">
+                        <img src="{{tvshow[0]}}" style="height: 100%; width: 100%; object-fit: contain" class="card-img-top h-100" alt="...">
                     </div>
                     <div class="col-sm-7">
                         <div class="card-body">
@@ -56,10 +57,13 @@
                 </div>
             </div>
             {% endfor %}
+            {% endif%}
+            {% if tvshows|length == 0 %}
+                <h3><strong>Não foi possível encontrar resultados</strong></h3>
+            {% endif%}
             </div>
             </div>
         </div>
-           
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
