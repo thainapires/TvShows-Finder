@@ -1,0 +1,30 @@
+.minutes{
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(19, 19, 19);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+  }
+
+
+.type{
+    display: inline-block;
+    color: #535353;
+    margin-left: 10px;
+  }
+
+  .movie-info {
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding: 10px;
+}
+
+.fa-cog {
+    color: black;
+  }
+
+.c-custom{
+    padding:20px;
+}
