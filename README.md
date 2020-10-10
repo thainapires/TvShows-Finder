@@ -12,13 +12,13 @@
 
 # Preview
 
-<p>
-  <img src="static/search-page.jpg" alt="search page">
-</p>
+<kbd>
+  <img src="static/search-page.jpg"  alt="search page">
+</kbd>
 
 ## Goals
 
-- [x] Create base for the search and results page ;)
+- [x] Create base for the search and results page
 - [ ] Return all the results for the search therm
 - [ ] Add Pagination to return all the results in pages
 - [ ] Fix the card design
