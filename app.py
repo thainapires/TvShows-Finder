@@ -20,7 +20,7 @@ def search_tvshow():
         if(search_term == ''):
             return render_template('movies.html', randn = str(random.randint(101,4000)))
     response = requests.get("http://api.tvmaze.com/search/shows?q={}".format(search_term))
-    #jprint(response.json()[1])
+    jprint(response.json()[1])
     response = response.json()
     #print(type(response))
     tvshow =[]

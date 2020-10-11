@@ -1,15 +1,13 @@
-*,
+/**,
 html,
-body {
-  margin: 0;
-  padding: 0;
+.body-home {
   overflow: hidden;/*add This*/ 
-}
+/*}*/
 
-.container {
+.container-home {
     width: 100vw;
-    height: 100vh;
-    max-width:100%;  /* added */
+    height: 85vh;
+    max-width:100%;
     max-height:100%;
     display: flex;
     flex-direction: row;
@@ -20,6 +18,37 @@ body {
 
 h6{
     color: rgb(126, 126, 126);
+}
+
+.minutes{
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(19, 19, 19);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+
+.type{
+    display: inline-block;
+    color: #535353;
+    margin-left: 10px;
+}
+
+.movie-info {
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding: 10px;
+}
+
+.fa-cog {
+    color: black;
+}
+
+.c-custom{
+    padding:20px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -42,7 +71,3 @@ h6{
     border-color: #6147ff !important;
     background-color: #6147ff !important;
 }
-
-
-
-
