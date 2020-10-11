@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  A Simple TV Shows finder that uses Flask and TVmaze API.
+  A Simple TV Shows finder that uses Flask and TVmaze API. I'm developing this for learning purpose.
 </p>
 
 <p align="center">
@@ -19,7 +19,8 @@
 ## Goals
 
 - [x] Create base for the search and results page
-- [ ] Return all the results for the search term
+- [x] Return all the results for the search term
 - [ ] Add Pagination to return all the results in pages
-- [ ] Fix the card design
+- [ ] Fix the card design 
 - [ ] Improve my CSS and HTML code
+- [ ] Add Search Bar with the term searched in the results page
