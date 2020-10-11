@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css')+'?q='+randn }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')+'?q='+randn}}">
 <title>TV Shows Finder</title>
 {% endblock %}
 
@@ -9,39 +9,38 @@
 <div class='container'>
     <div class="album py-5 bg-white d-mov">
           <div class="row">
-            {% if tvshows|length > 0 %}
-            {% for tvshow in tvshows %}
-            <div class="col-md-6 c-custom align-items-stretch">
+            {% if tvshows|length > 0 %}{% for tvshow in tvshows %}
+            <div class="col-md-6 c-custom">
                 <div class="card"><!--style="max-width: 500px;"-->
-                <div class="row no-gutters">
-                    <div class="col-sm-5" style="background: #868e96;">
-                        <img src="{{tvshow[0]}}" style="height: 100%; width: 100%; object-fit: contain" class="card-img-top h-100" alt="...">
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="card-body">
-                            <h4 class="card-title">{{tvshow[1]}}, {{tvshow[2]}}</h4>
-                            <span class="minutes">{{tvshow[3]}}min</span>
-                            <p class="type">{{tvshow[4]}}</p>
-                            <p class="card-text">{{tvshow[5]}}</p>
-                            <span class="movie_info"><i class="fa fa-star"></i>{{tvshow[7]}}</span>
-                            <div class="row movie-info">
-                                <div class="col-lg-12 col-sm-12 col-12 ">
-                                    <a href="{{tvshow[6]}}" target='_blank'><i class="fa fa-globe" aria-hidden="true"></i></a>
+                    <div class="row no-gutters">
+                        <div class="col-sm-5" style="background: #868e96;">
+                            <img src="{{tvshow[0]}}" class="card-img-top h-100" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h4 class="card-title">{{tvshow[1]}}, {{tvshow[2]}}</h4>
+                                <span class="minutes">{{tvshow[3]}}min</span>
+                                <p class="genres">{{tvshow[4]}}</p>
+                                <p class="card-text">{{tvshow[5]}}</p>
+                                <span class="movie_info"><i class="fa fa-star"></i>{{tvshow[7]}}</span>
+                                <div class="row movie-info">
+                                    <div class="col-lg-12 col-sm-12 col-12 ">
+                                        <a href="{{tvshow[6]}}" target='_blank'><i class="fa fa-globe" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
             {% endfor %}
             {% endif%}
             {% if tvshows|length == 0 %}
-                <h3><strong>Não foi possível encontrar resultados</strong></h3>
+            <h3><strong>Não foi possível encontrar resultados</strong></h3>
             {% endif%}
-            </div>
-            </div>
         </div>
+    </div>
+</div>
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
