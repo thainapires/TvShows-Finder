@@ -20,13 +20,13 @@ def search_tvshow():
     if request.method == 'POST':
         search_term = request.form['search_term']
         if(search_term == ''):
-            return render_template('movies.html', randn = str(random.randint(5000,6000)))
+            return render_template('results.html', randn = str(random.randint(5000,6000)))
     
     response = requests.get("http://api.tvmaze.com/search/shows?q={}".format(search_term))
     response = response.json()
     
     if(not response):
-        return render_template('movies.html', randn = str(random.randint(6060,9000)))
+        return render_template('results.html', randn = str(random.randint(6060,9000)))
 
     for i in range(len(response)):
         img = response[i]['show']['image']
