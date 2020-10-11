@@ -61,7 +61,7 @@ def search_tvshow():
         rating = response[i]['show']['rating']['average']        
         tvshow.append([img, name, year, time, genres, summary, website, rating])
         
-    return render_template('movies.html', randn = str(random.randint(101,4000)), tvshows = tvshow)
+    return render_template('results.html', randn = str(random.randint(101,4000)), tvshows = tvshow)
 
 def jprint(obj):
     # create a formatted string of the Python JSON object
