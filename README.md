@@ -13,7 +13,7 @@
 # Preview
 
 <kbd>
-  <img src="static/search-page.jpg"  alt="search page">
+  <img src="static/preview.jpg"  alt="search page">
 </kbd>
 
 ## Goals
