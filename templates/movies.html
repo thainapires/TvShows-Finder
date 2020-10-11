@@ -7,14 +7,6 @@
 
 {% block body %}
 <div class='container'>
-    <form style="padding:10px;", action="{{ url_for('search_tvshow') }}" method="post">
-                <div class="input-group mb-3">
-                    <input type="text" name="search_term"  class="form-control search-bar" placeholder="Search" aria-label="Recipient's username">
-                    <div class="input-group-append"></div>
-                    <button type="submit" class="input-group-text search-bar-icon"><i class="fa fa-search icon-search"></i></button>
-                    <!--<button type="submit" class="btn btn-primary">Submit</button>-->
-                </div>
-            </form>
     <div class="album py-5 bg-white">
           <div class="row">
             {% if tvshows|length > 0 %}
